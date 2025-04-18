@@ -241,6 +241,25 @@ img {
   color: white;
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 90px; /* décale par rapport au chatbot */
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
