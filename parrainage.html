@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parrainage - Auto-École Marietton</title>
+    <meta name="description" content="Parrainez un ami à l'Auto-École Marietton et recevez 50€ chacun. Programme de parrainage simple et avantageux.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Auto-École Marietton">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Nos formations</a></li>
+                    <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                    <li><a href="parrainage.html" class="active">Parrainage</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="phone-number">
+                <i class="fas fa-phone"></i>
+                <span>04 78 XX XX XX</span>
+            </div>
+            
+            <a href="rendez-vous.html" class="cta-button">Prendre rendez-vous</a>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Parrainage gagnant ! 🚀</h1>
+            <p>Recommandez-nous et gagnez 50€ pour vous et votre filleul</p>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Comment ça marche ?</h2>
+                <p>Un processus simple en 3 étapes</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Recommandez-nous</h3>
+                    <p>Parlez de Marietton à vos amis, votre famille ou vos collègues qui souhaitent passer leur permis.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3>Inscription du filleul</h3>
+                    <p>Votre filleul s'inscrit chez Marietton en mentionnant votre nom comme parrain.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Recevez votre récompense</h3>
+                    <p>Dès que l'inscription de votre filleul est validée, vous recevez chacun 50€ !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Parrainage Form Section -->
+    <section class="parrainage-form-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formulaire de parrainage</h2>
+                <p>Remplissez ce formulaire pour parrainer un ami</p>
+            </div>
+            
+            <div class="form-container">
+                <form class="parrainage-form">
+                    <div class="form-section">
+                        <h3>Vos informations (parrain)</h3>
+                        
+                        <div class="form-group">
+                            <label for="parrain-nom">Nom</label>
+                            <input type="text" id="parrain-nom" name="parrain-nom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parrain-prenom">Prénom</label>
+                            <input type="text" id="parrain-prenom" name="parrain-prenom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parrain-email">Email</label>
+                            <input type="email" id="parrain-email" name="parrain-email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="parrain-telephone">Téléphone</label>
+                            <input type="tel" id="parrain-telephone" name="parrain-telephone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Informations du filleul</h3>
+                        
+                        <div class="form-group">
+                            <label for="filleul-nom">Nom</label>
+                            <input type="text" id="filleul-nom" name="filleul-nom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="filleul-prenom">Prénom</label>
+                            <input type="text" id="filleul-prenom" name="filleul-prenom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="filleul-email">Email</label>
+                            <input type="email" id="filleul-email" name="filleul-email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="filleul-telephone">Téléphone</label>
+                            <input type="tel" id="filleul-telephone" name="filleul-telephone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Formation souhaitée par le filleul</h3>
+                        
+                        <div class="form-group">
+                            <label for="formation">Formation</label>
+                            <select id="formation" name="formation" class="form-control" required>
+                                <option value="">Sélectionnez une formation</option>
+                                <option value="permis-b">Permis B - Voiture</option>
+                                <option value="permis-a">Permis A - Moto</option>
+                                <option value="conduite-accompagnee">Conduite accompagnée</option>
+                                <option value="perfectionnement">Perfectionnement</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (optionnel)</label>
+                            <textarea id="message" name="message" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="verification" name="verification" required>
+                            <label for="verification">Je certifie que les informations fournies sont exactes</label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">J'accepte les <a href="cgv.html">conditions générales</a> et la <a href="confidentialite.html">politique de confidentialité</a></label>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="contact-filleul" name="contact-filleul" required>
+                            <label for="contact-filleul">J'ai obtenu l'accord de mon filleul pour communiquer ses coordonnées</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Envoyer ma demande de parrainage</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Conditions Section -->
+    <section class="conditions-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conditions du programme</h2>
+                <p>Quelques informations importantes à connaître</p>
+            </div>
+            
+            <div class="conditions-container">
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="condition-content">
+                        <h3>Récompense envoyée dès validation</h3>
+                        <p>La récompense de 50€ est envoyée dès que l'inscription du filleul est validée et le premier paiement effectué.</p>
+                    </div>
+                </div>
+                
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="condition-content">
+                        <h3>Valable sur permis B ou A uniquement</h3>
+                        <p>Le programme de parrainage est valable uniquement pour les inscriptions aux formations permis B (voiture) ou permis A (moto).</p>
+                    </div>
+                </div>
+                
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <div class="condition-content">
+                        <h3>Nombre de parrainages illimité</h3>
+                        <p>Vous pouvez parrainer autant de personnes que vous le souhaitez. Chaque parrainage validé vous rapporte 50€.</p>
+                    </div>
+                </div>
+                
+                <div class="condition-item">
+                    <div class="condition-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="condition-content">
+                        <h3>Validité d'un an</h3>
+                        <p>Le filleul doit s'inscrire dans un délai d'un an après la soumission du formulaire de parrainage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ils ont parrainé leurs amis</h2>
+                <p>Découvrez les témoignages de nos parrains satisfaits</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "J'ai parrainé 3 amis qui cherchaient une auto-école sérieuse. Ils sont tous très satisfaits de leur formation et j'ai pu économiser 150€ sur mes heures de conduite !"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-4.jpg" alt="Photo de Julien" class="author-photo">
+                        <div>
+                            <h4>Julien, 24 ans</h4>
+                            <p>A parrainé 3 amis</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "J'ai parlé de Marietton à ma sœur qui voulait passer son permis. Elle a été conquise par l'approche humaine et nous avons chacune reçu 50€. Une belle surprise !"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-5.jpg" alt="Photo de Léa" class="author-photo">
+                        <div>
+                            <h4>Léa, 28 ans</h4>
+                            <p>A parrainé sa sœur</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "J'ai recommandé Marietton à plusieurs collègues. Le processus de parrainage est simple et rapide, et la récompense est versée rapidement. Tout le monde y gagne !"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-6.jpg" alt="Photo de Marc" class="author-photo">
+                        <div>
+                            <h4>Marc, 32 ans</h4>
+                            <p>A parrainé 2 collègues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à parrainer vos proches ?</h2>
+            <p>Faites-leur bénéficier d'une formation de qualité et recevez 50€ chacun !</p>
+            <a href="#parrainage-form-section" class="cta-button">Je parraine maintenant</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Auto-École Marietton</h3>
+                    <p>Votre partenaire de confiance pour l'apprentissage de la conduite depuis plus de 70 ans.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Nos formations</a></li>
+                        <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                        <li><a href="parrainage.html">Parrainage</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue de Lyon, 69000 Lyon</p>
+                    <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@auto-ecole-marietton.fr</p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto-École Marietton. Tous droits réservés.</p>
+                <p>
+                    <a href="mentions-legales.html">Mentions légales</a> | 
+                    <a href="cgv.html">CGV</a> | 
+                    <a href="confidentialite.html">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <div class="chatbot-title">Assistant Marietton</div>
+                <div class="chatbot-close"><i class="fas fa-times"></i></div>
+            </div>
+            
+            <div class="chatbot-messages"></div>
+            
+            <div class="chatbot-input">
+                <input type="text" placeholder="Posez votre question...">
+                <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

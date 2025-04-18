@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Auto-École Marietton</title>
+    <meta name="description" content="Trouvez les réponses à toutes vos questions sur l'Auto-École Marietton, les formations, les tarifs et les modalités d'inscription.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Auto-École Marietton">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Nos formations</a></li>
+                    <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                    <li><a href="parrainage.html">Parrainage</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="phone-number">
+                <i class="fas fa-phone"></i>
+                <span>04 78 XX XX XX</span>
+            </div>
+            
+            <a href="rendez-vous.html" class="cta-button">Prendre rendez-vous</a>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Foire Aux Questions</h1>
+            <p>Trouvez les réponses à vos questions les plus fréquentes</p>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-search">
+                <input type="text" placeholder="Rechercher une question..." id="faq-search-input">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="faq-categories">
+                <button class="category-button active" data-category="all">Toutes les questions</button>
+                <button class="category-button" data-category="inscription">Inscription</button>
+                <button class="category-button" data-category="formation">Formation</button>
+                <button class="category-button" data-category="examen">Examen</button>
+                <button class="category-button" data-category="paiement">Paiement</button>
+            </div>
+            
+            <div class="faq-list">
+                <!-- Inscription -->
+                <div class="faq-item" data-category="inscription">
+                    <div class="faq-question">
+                        <h3>Quels documents fournir pour m'inscrire ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour vous inscrire à l'Auto-École Marietton, vous devez fournir les documents suivants :</p>
+                        <ul>
+                            <li>Pièce d'identité en cours de validité (carte d'identité, passeport)</li>
+                            <li>Justificatif de domicile de moins de 6 mois</li>
+                            <li>Photo d'identité aux normes</li>
+                            <li>ASSR2 pour les moins de 21 ans</li>
+                            <li>Attestation de recensement pour les moins de 18 ans</li>
+                            <li>JDC (Journée Défense et Citoyenneté) pour les 18-25 ans</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="inscription">
+                    <div class="faq-question">
+                        <h3>Quel âge minimum pour s'inscrire ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'âge minimum pour s'inscrire varie selon la formation :</p>
+                        <ul>
+                            <li>Permis B (voiture) : 17 ans pour la conduite accompagnée, 18 ans pour la formation traditionnelle</li>
+                            <li>Permis A1 (moto légère) : 16 ans</li>
+                            <li>Permis A2 (moto moyenne puissance) : 18 ans</li>
+                            <li>Permis A (moto toutes cylindrées) : 20 ans (après 2 ans de permis A2)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Formation -->
+                <div class="faq-item" data-category="formation">
+                    <div class="faq-question">
+                        <h3>Comment sont calculées les heures ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les heures de conduite sont calculées de la manière suivante :</p>
+                        <ul>
+                            <li>Une heure de conduite correspond à 55 minutes de conduite effective</li>
+                            <li>Les 5 minutes restantes sont consacrées au bilan de la leçon et à la planification de la suivante</li>
+                            <li>Le temps de prise en main du véhicule et de retour à l'auto-école est inclus dans l'heure</li>
+                            <li>Les heures non utilisées vous sont intégralement remboursées</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="formation">
+                    <div class="faq-question">
+                        <h3>Peut-on se faire rembourser les heures non effectuées ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, chez Marietton, nous remboursons intégralement les heures de conduite non effectuées. C'est l'un de nos engagements forts.</p>
+                        <p>Si vous obtenez votre permis avant d'avoir utilisé toutes vos heures prépayées, ou si vous décidez d'arrêter votre formation pour une raison quelconque, nous vous remboursons les heures restantes au tarif auquel vous les avez achetées.</p>
+                        <p>Pour obtenir ce remboursement, il vous suffit d'en faire la demande auprès de votre agence. Le remboursement est effectué sous 15 jours.</p>
+                    </div>
+                </div>
+                
+                <!-- Examen -->
+                <div class="faq-item" data-category="examen">
+                    <div class="faq-question">
+                        <h3>Que se passe-t-il si je rate l'examen ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Si vous ne réussissez pas l'examen du permis de conduire :</p>
+                        <ul>
+                            <li>Nous analysons avec vous les raisons de l'échec</li>
+                            <li>Nous vous proposons des heures de conduite supplémentaires ciblées sur vos points faibles</li>
+                            <li>Nous vous reprogrammons une nouvelle date d'examen dès que possible (généralement sous 2 à 3 semaines)</li>
+                            <li>Les frais de présentation à l'examen sont à régler à nouveau (environ 45€)</li>
+                        </ul>
+                        <p>Notre taux de réussite de 95% au premier passage témoigne de notre engagement à vous préparer efficacement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="examen">
+                    <div class="faq-question">
+                        <h3>Comment se déroule l'examen du permis B ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'examen pratique du permis B se déroule en plusieurs étapes :</p>
+                        <ol>
+                            <li>Vérification d'identité (présentez-vous avec votre pièce d'identité)</li>
+                            <li>Questions sur les vérifications intérieures/extérieures du véhicule (environ 5 minutes)</li>
+                            <li>Conduite effective (environ 25 minutes) comprenant :
+                                <ul>
+                                    <li>Manœuvres (créneau, marche arrière, etc.)</li>
+                                    <li>Conduite autonome (suivre un itinéraire pendant environ 5 minutes)</li>
+                                    <li>Conduite sur différents types de routes (ville, périphérique, route)</li>
+                                </ul>
+                            </li>
+                            <li>Bilan de l'examen avec l'inspecteur</li>
+                        </ol>
+                        <p>Le résultat vous est communiqué dans les 48h via le site de la Sécurité Routière.</p>
+                    </div>
+                </div>
+                
+                <!-- Paiement -->
+                <div class="faq-item" data-category="paiement">
+                    <div class="faq-question">
+                        <h3>L'auto-école accepte-t-elle le CPF ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, l'Auto-École Marietton est certifiée et vous permet d'utiliser votre Compte Personnel de Formation (CPF) pour financer tout ou partie de votre formation au permis de conduire.</p>
+                        <p>Pour utiliser votre CPF, vous devez remplir l'une des conditions suivantes :</p>
+                        <ul>
+                            <li>Le permis contribue à la sécurisation de votre parcours professionnel</li>
+                            <li>L'obtention du permis facilite votre recherche d'emploi</li>
+                        </ul>
+                        <p>Nos conseillers vous accompagnent dans les démarches administratives pour mobiliser votre CPF.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="paiement">
+                    <div class="faq-question">
+                        <h3>Quelles sont les facilités de paiement proposées ?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous proposons plusieurs solutions pour faciliter le paiement de votre formation :</p>
+                        <ul>
+                            <li>Paiement en 3 fois sans frais</li>
+                            <li>Utilisation du CPF (Compte Personnel de Formation)</li>
+                            <li>Prise en charge par Pôle Emploi (sous conditions)</li>
+                            <li>Prise en charge par la Mission Locale pour les moins de 25 ans (sous conditions)</li>
+                            <li>Paiement échelonné sur la durée de la formation</li>
+                        </ul>
+                        <p>N'hésitez pas à nous contacter pour étudier la solution la plus adaptée à votre situation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-no-results" style="display: none;">
+                <p>Aucune question ne correspond à votre recherche.</p>
+            </div>
+            
+            <div class="ask-question">
+                <h3>Vous n'avez pas trouvé la réponse à votre question ?</h3>
+                <p>Contactez-nous directement ou posez votre question via notre chatbot.</p>
+                <div class="ask-buttons">
+                    <a href="contact.html" class="secondary-button">Nous contacter</a>
+                    <button class="whatsapp-button-inline">
+                        <i class="fab fa-whatsapp"></i> Poser une question via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Auto-École Marietton</h3>
+                    <p>Votre partenaire de confiance pour l'apprentissage de la conduite depuis plus de 70 ans.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Nos formations</a></li>
+                        <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                        <li><a href="parrainage.html">Parrainage</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue de Lyon, 69000 Lyon</p>
+                    <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@auto-ecole-marietton.fr</p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto-École Marietton. Tous droits réservés.</p>
+                <p>
+                    <a href="mentions-legales.html">Mentions légales</a> | 
+                    <a href="cgv.html">CGV</a> | 
+                    <a href="confidentialite.html">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <div class="chatbot-title">Assistant Marietton</div>
+                <div class="chatbot-close"><i class="fas fa-times"></i></div>
+            </div>
+            
+            <div class="chatbot-messages"></div>
+            
+            <div class="chatbot-input">
+                <input type="text" placeholder="Posez votre question...">
+                <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+</html>

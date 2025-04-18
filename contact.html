@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Auto-École Marietton</title>
+    <meta name="description" content="Contactez l'Auto-École Marietton à Lyon. Trouvez nos agences, horaires d'ouverture et formulaire de contact.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Auto-École Marietton">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Nos formations</a></li>
+                    <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                    <li><a href="parrainage.html">Parrainage</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="phone-number">
+                <i class="fas fa-phone"></i>
+                <span>04 78 XX XX XX</span>
+            </div>
+            
+            <a href="rendez-vous.html" class="cta-button">Prendre rendez-vous</a>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+    
+    <!-- Contact Options Section -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-options-grid">
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Nos agences</h3>
+                    <p>8 agences en région lyonnaise pour être au plus proche de vous</p>
+                    <a href="#agencies" class="text-link">Voir les adresses</a>
+                </div>
+                
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Par téléphone</h3>
+                    <p>04 78 XX XX XX</p>
+                    <p>Du lundi au vendredi : 9h-19h<br>Samedi : 9h-12h</p>
+                </div>
+                
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Par email</h3>
+                    <p>contact@auto-ecole-marietton.fr</p>
+                    <p>Nous vous répondons sous 24h</p>
+                </div>
+                
+                <div class="contact-option">
+                    <div class="option-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Via WhatsApp</h3>
+                    <p>Contactez directement un conseiller</p>
+                    <a href="#" class="whatsapp-button-inline">Discuter sur WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formulaire de contact</h2>
+                <p>Envoyez-nous un message et nous vous répondrons dans les plus brefs délais</p>
+            </div>
+            
+            <div class="form-container">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sujet">Sujet</label>
+                        <select id="sujet" name="sujet" class="form-control" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="inscription">Inscription</option>
+                            <option value="parrainage">Parrainage</option>
+                            <option value="reclamation">Réclamation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">J'accepte que mes données soient traitées conformément à la <a href="confidentialite.html">politique de confidentialité</a></label>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Agencies Section -->
+    <section id="agencies" class="agencies-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos agences</h2>
+                <p>Retrouvez-nous dans l'une de nos 8 agences en région lyonnaise</p>
+            </div>
+            
+            <div class="agencies-grid">
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Lyon Centre</h3>
+                        <div class="agency-badge">Siège social</div>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Avenue de Lyon, 69000 Lyon</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Lyon Est</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 45 Rue de la République, 69003 Lyon</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Lyon Ouest</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 78 Boulevard des Belges, 69006 Lyon</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Villeurbanne</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 12 Avenue Henri Barbusse, 69100 Villeurbanne</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Bron</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 56 Avenue Franklin Roosevelt, 69500 Bron</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Vaulx-en-Velin</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 34 Avenue Gabriel Péri, 69120 Vaulx-en-Velin</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Vénissieux</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 89 Boulevard Ambroise Croizat, 69200 Vénissieux</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+                
+                <div class="agency-card">
+                    <div class="agency-header">
+                        <h3>Caluire</h3>
+                    </div>
+                    <div class="agency-address">
+                        <p><i class="fas fa-map-marker-alt"></i> 23 Avenue Barthélémy Thimonnier, 69300 Caluire</p>
+                        <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="text-link">Voir sur Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Carte de nos agences</h2>
+                <p>Trouvez l'agence la plus proche de chez vous</p>
+            </div>
+            
+            <div class="map-container">
+                <!-- Ici, nous intégrerons une carte interactive avec les emplacements des agences -->
+                <div class="map-placeholder">
+                    <p>Carte interactive des agences Marietton</p>
+                    <p><i class="fas fa-map-marked-alt"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Suivez-nous sur les réseaux sociaux</h2>
+                <p>Restez informés de nos actualités et promotions</p>
+            </div>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>Suivez notre actualité et nos événements</p>
+                </a>
+                
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Découvrez nos photos et témoignages</p>
+                </a>
+                
+                <a href="#" class="social-card linkedin">
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>Suivez notre actualité professionnelle</p>
+                </a>
+                
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>Regardez nos vidéos pédagogiques</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Auto-École Marietton</h3>
+                    <p>Votre partenaire de confiance pour l'apprentissage de la conduite depuis plus de 70 ans.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="formations.html">Nos formations</a></li>
+                        <li><a href="pourquoi-nous.html">Pourquoi nous choisir</a></li>
+                        <li><a href="parrainage.html">Parrainage</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue de Lyon, 69000 Lyon</p>
+                    <p><i class="fas fa-phone"></i> 04 78 XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@auto-ecole-marietton.fr</p>
+                    <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sam: 9h-12h</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Auto-École Marietton. Tous droits réservés.</p>
+                <p>
+                    <a href="mentions-legales.html">Mentions légales</a> | 
+                    <a href="cgv.html">CGV</a> | 
+                    <a href="confidentialite.html">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Button -->
+    <a href="#" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-button">
+            <i class="fas fa-comments"></i>
+        </div>
+        
+        <div class="chatbot-panel">
+            <div class="chatbot-header">
+                <div class="chatbot-title">Assistant Marietton</div>
+                <div class="chatbot-close"><i class="fas fa-times"></i></div>
+            </div>
+            
+            <div class="chatbot-messages"></div>
+            
+            <div class="chatbot-input">
+                <input type="text" placeholder="Posez votre question...">
+                <button class="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
